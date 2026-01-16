@@ -1,0 +1,58 @@
+[gd_scene load_steps=3 format=3 uid="uid://vk2yjld81830"]
+
+[ext_resource type="Texture2D" uid="uid://bekugr55o7rhk" path="res://Tileset/background/8f0be690-0dd9-4308-966e-8956dd4d4f0e.jpg" id="1_06t4h"]
+[ext_resource type="Script" uid="uid://dqmap2rmpx8uo" path="res://main_menu.gd" id="1_7vrkn"]
+
+[node name="Main Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_7vrkn")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(630.08246, 512.05)
+scale = Vector2(1.1797949, 1)
+texture = ExtResource("1_06t4h")
+
+[node name="Camera2D" type="Camera2D" parent="Sprite2D"]
+zoom = Vector2(0.635, 0.635)
+
+[node name="START" type="Button" parent="."]
+layout_mode = 0
+offset_left = 404.0
+offset_top = 263.0
+offset_right = 788.0
+offset_bottom = 400.0
+text = "START"
+
+[node name="LOAD" type="Button" parent="."]
+layout_mode = 0
+offset_left = 402.0
+offset_top = 416.0
+offset_right = 782.0
+offset_bottom = 556.0
+text = "LOAD"
+
+[node name="SETTINGS" type="Button" parent="."]
+layout_mode = 0
+offset_left = 401.0
+offset_top = 581.0
+offset_right = 781.0
+offset_bottom = 711.0
+text = "SETTINGS"
+
+[node name="EXIT" type="Button" parent="."]
+layout_mode = 0
+offset_left = 401.0
+offset_top = 725.0
+offset_right = 777.0
+offset_bottom = 869.0
+text = "EXIT"
+
+[connection signal="pressed" from="START" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="LOAD" to="." method="_on_load_pressed"]
+[connection signal="pressed" from="SETTINGS" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="EXIT" to="." method="_on_exit_pressed"]

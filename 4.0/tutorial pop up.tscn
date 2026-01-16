@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://brbogsloskt7x"]
+
+[ext_resource type="FontFile" uid="uid://c36552t1pqbo1" path="res://font/Peaberry-Font-v2.0/Peaberry-Font-v2.0/Peaberry Font Family/Peaberry Monospace/PeaberryMono.ttf" id="1_5utp3"]
+[ext_resource type="Texture2D" uid="uid://cfbdkhgslralf" path="res://Tileset/exit/textbox.png" id="1_qpmas"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Label" type="Label" parent="."]
+z_index = -1
+texture_filter = 1
+offset_left = -72.3125
+offset_top = -23.6875
+offset_right = 112.6875
+offset_bottom = 27.3125
+theme_override_fonts/font = ExtResource("1_5utp3")
+theme_override_font_sizes/font_size = 14
+text = "Press A to move left
+Press D to move right
+Press SPACE to jump"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -2
+texture_filter = 1
+position = Vector2(16, 4.0000005)
+scale = Vector2(7.5351563, 5.0742188)
+texture = ExtResource("1_qpmas")
