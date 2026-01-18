@@ -2,8 +2,8 @@
 
 [ext_resource type="Texture2D" uid="uid://dcf6jbpugurwo" path="res://player/anya idle animation(4).png" id="1_4flbx"]
 [ext_resource type="Script" uid="uid://dcya4vs55a86g" path="res://player.gd" id="1_onrkg"]
-[ext_resource type="Texture2D" uid="uid://bpj32e11mpfp4" path="res://player/Idle2.png" id="5_2hs0m"]
-[ext_resource type="Texture2D" uid="uid://dqm21w2m4jgww" path="res://player/Swim.png" id="6_1jxqw"]
+[ext_resource type="Texture2D" uid="uid://dyrnnsofkfocc" path="res://player/anya jump animation(1).png" id="3_hqtel"]
+[ext_resource type="Texture2D" uid="uid://cx351hc1obiwf" path="res://player/anya running animations2.png" id="4_sweqy"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_onrkg"]
 atlas = ExtResource("1_4flbx")
@@ -30,99 +30,97 @@ atlas = ExtResource("1_4flbx")
 region = Rect2(320, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_dw050"]
-atlas = ExtResource("1_4flbx")
+atlas = ExtResource("3_hqtel")
 region = Rect2(0, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_b26j0"]
-atlas = ExtResource("1_4flbx")
+atlas = ExtResource("3_hqtel")
 region = Rect2(64, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_n7ghd"]
-atlas = ExtResource("1_4flbx")
+atlas = ExtResource("3_hqtel")
 region = Rect2(128, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_nvl01"]
-atlas = ExtResource("1_4flbx")
+atlas = ExtResource("3_hqtel")
 region = Rect2(192, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ivps1"]
-atlas = ExtResource("1_4flbx")
+atlas = ExtResource("3_hqtel")
 region = Rect2(256, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_urp6f"]
-atlas = ExtResource("1_4flbx")
-region = Rect2(320, 0, 64, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_bwjto"]
-atlas = ExtResource("1_4flbx")
+atlas = ExtResource("4_sweqy")
 region = Rect2(0, 0, 64, 64)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_606se"]
-atlas = ExtResource("1_4flbx")
+[sub_resource type="AtlasTexture" id="AtlasTexture_bwjto"]
+atlas = ExtResource("4_sweqy")
 region = Rect2(64, 0, 64, 64)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_u1c27"]
-atlas = ExtResource("1_4flbx")
+[sub_resource type="AtlasTexture" id="AtlasTexture_606se"]
+atlas = ExtResource("4_sweqy")
 region = Rect2(128, 0, 64, 64)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_op7ga"]
-atlas = ExtResource("1_4flbx")
+[sub_resource type="AtlasTexture" id="AtlasTexture_u1c27"]
+atlas = ExtResource("4_sweqy")
 region = Rect2(192, 0, 64, 64)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_q13i1"]
-atlas = ExtResource("1_4flbx")
+[sub_resource type="AtlasTexture" id="AtlasTexture_op7ga"]
+atlas = ExtResource("4_sweqy")
 region = Rect2(256, 0, 64, 64)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_pylmc"]
-atlas = ExtResource("1_4flbx")
-region = Rect2(320, 0, 64, 64)
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_q13i1"]
+load_path = "res://.godot/imported/Idle2.png-7fba3506cfb3722765075cec44b13dd4.ctex"
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_pbfsw"]
-atlas = ExtResource("5_2hs0m")
+atlas = SubResource("CompressedTexture2D_q13i1")
 region = Rect2(0, 0, 48, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_5tmop"]
-atlas = ExtResource("5_2hs0m")
+atlas = SubResource("CompressedTexture2D_q13i1")
 region = Rect2(48, 0, 48, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7ahtn"]
-atlas = ExtResource("5_2hs0m")
+atlas = SubResource("CompressedTexture2D_q13i1")
 region = Rect2(96, 0, 48, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7lmhl"]
-atlas = ExtResource("5_2hs0m")
+atlas = SubResource("CompressedTexture2D_q13i1")
 region = Rect2(144, 0, 48, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_dx0e4"]
-atlas = ExtResource("5_2hs0m")
+atlas = SubResource("CompressedTexture2D_q13i1")
 region = Rect2(192, 0, 48, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jm5j8"]
-atlas = ExtResource("5_2hs0m")
+atlas = SubResource("CompressedTexture2D_q13i1")
 region = Rect2(240, 0, 48, 48)
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_pylmc"]
+load_path = "res://.godot/imported/Swim.png-2859e84f4fe27d852876f293a13625a5.ctex"
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_7hik5"]
-atlas = ExtResource("6_1jxqw")
+atlas = SubResource("CompressedTexture2D_pylmc")
 region = Rect2(0, 0, 48, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qtqh7"]
-atlas = ExtResource("6_1jxqw")
+atlas = SubResource("CompressedTexture2D_pylmc")
 region = Rect2(48, 0, 48, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2wuci"]
-atlas = ExtResource("6_1jxqw")
+atlas = SubResource("CompressedTexture2D_pylmc")
 region = Rect2(96, 0, 48, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_iruf7"]
-atlas = ExtResource("6_1jxqw")
+atlas = SubResource("CompressedTexture2D_pylmc")
 region = Rect2(144, 0, 48, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_j5n4i"]
-atlas = ExtResource("6_1jxqw")
+atlas = SubResource("CompressedTexture2D_pylmc")
 region = Rect2(192, 0, 48, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_634y6"]
-atlas = ExtResource("6_1jxqw")
+atlas = SubResource("CompressedTexture2D_pylmc")
 region = Rect2(240, 0, 48, 48)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_dw050"]
@@ -165,15 +163,15 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_ivps1")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_urp6f")
 }],
 "loop": true,
 "name": &"Jump",
 "speed": 5.0
 }, {
 "frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_urp6f")
+}, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_bwjto")
 }, {
@@ -185,12 +183,6 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_op7ga")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_q13i1")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_pylmc")
 }],
 "loop": true,
 "name": &"Run",
@@ -263,8 +255,9 @@ script = ExtResource("1_onrkg")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(3, 3)
 sprite_frames = SubResource("SpriteFrames_dw050")
-animation = &"Run"
+animation = &"Jump"
 autoplay = "Idle"
+frame_progress = 0.3952627
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(2, -4)

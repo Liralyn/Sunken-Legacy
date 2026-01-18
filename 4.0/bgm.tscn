@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://bvj5pbhelnbj2"]
+
+[ext_resource type="AudioStream" uid="uid://cxscbn1frpffy" path="res://bgm/boba date   cute background music (royalty free).mp3" id="1_l7bcd"]
+
+[node name="bgm" type="AudioStreamPlayer2D"]
+stream = ExtResource("1_l7bcd")
+autoplay = true
+max_distance = 507355.0
+bus = &"Music"

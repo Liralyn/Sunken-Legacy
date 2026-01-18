@@ -8743,7 +8743,7 @@ position = Vector2(-23, -82)
 
 [node name="Parallax" type="Node2D" parent="."]
 z_index = -2
-position = Vector2(625.19, 117.465)
+position = Vector2(1770.615, 117.465)
 scale = Vector2(0.435, 0.435)
 
 [node name="Parallax2D" type="Parallax2D" parent="Parallax"]
@@ -8775,6 +8775,7 @@ repeat_size = Vector2(1911.98, 0)
 repeat_times = 9
 
 [node name="Sprite2D" type="Sprite2D" parent="Parallax/Parallax2D4"]
+position = Vector2(12.919529, 131.1954)
 texture = ExtResource("3_rka8t")
 
 [node name="Parallax2D5" type="Parallax2D" parent="Parallax"]
@@ -8790,15 +8791,8 @@ texture = ExtResource("6_1pe0h")
 scale = Vector2(2.2988505, 2.2988505)
 scroll_scale = Vector2(1.115, 1.115)
 
-[node name="Node2D" parent="Parallax/Parallax2D7" instance=ExtResource("9_5rr72")]
-position = Vector2(-239.25, 87.33)
-
 [node name="Parallax2D" type="Parallax2D" parent="Parallax/Parallax2D7"]
 scroll_scale = Vector2(1.115, 1.115)
-
-[node name="Node2D" parent="Parallax/Parallax2D7/Parallax2D" instance=ExtResource("10_gyffv")]
-position = Vector2(545.81, 61.535004)
-scale = Vector2(0.79, 0.79)
 
 [node name="Node2D" parent="." instance=ExtResource("9_5rr72")]
 texture_filter = 1
