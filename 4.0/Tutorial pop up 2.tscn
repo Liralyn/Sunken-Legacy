@@ -1,22 +1,23 @@
-[gd_scene load_steps=3 format=3 uid="uid://dytegr58rsq6h"]
+[gd_scene load_steps=2 format=3 uid="uid://dytegr58rsq6h"]
 
-[ext_resource type="FontFile" uid="uid://c36552t1pqbo1" path="res://font/Peaberry-Font-v2.0/Peaberry-Font-v2.0/Peaberry Font Family/Peaberry Monospace/PeaberryMono.ttf" id="1_mp5gx"]
-[ext_resource type="Texture2D" uid="uid://cfbdkhgslralf" path="res://Tileset/exit/textbox.png" id="2_uu0kr"]
+[ext_resource type="FontFile" uid="uid://bhan50x8t2jrs" path="res://font/Pixel Game.otf" id="1_mp5gx"]
 
 [node name="Node2D" type="Node2D"]
 
-[node name="Label" type="Label" parent="."]
+[node name="Label2" type="Label" parent="."]
 z_index = -1
-offset_right = 188.0
-offset_bottom = 101.0
+texture_filter = 1
+offset_left = -72.3125
+offset_top = -23.6875
+offset_right = 159.6875
+offset_bottom = 72.3125
+theme_override_colors/font_color = Color(18.892002, 18.892002, 18.892002, 1)
+theme_override_constants/line_spacing = 8
+theme_override_constants/paragraph_spacing = -5
+theme_override_constants/outline_size = 4
 theme_override_fonts/font = ExtResource("1_mp5gx")
+theme_override_font_sizes/font_size = 29
 text = "Press A to swim left
 Press D to swim right
 Press SPACE to swim up
 Press CRTL to dive down"
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
-z_index = -2
-position = Vector2(107, 44.000008)
-scale = Vector2(9.71875, 7)
-texture = ExtResource("2_uu0kr")

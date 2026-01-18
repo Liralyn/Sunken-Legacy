@@ -1,0 +1,36 @@
+[remap]
+
+importer="font_data_dynamic"
+type="FontFile"
+uid="uid://bhan50x8t2jrs"
+path="res://.godot/imported/Pixel Game.otf-9288d19c6b8b92d5c7b82527fd5f131d.fontdata"
+
+[deps]
+
+source_file="res://font/Pixel Game.otf"
+dest_files=["res://.godot/imported/Pixel Game.otf-9288d19c6b8b92d5c7b82527fd5f131d.fontdata"]
+
+[params]
+
+Rendering=null
+antialiasing=1
+generate_mipmaps=false
+disable_embedded_bitmaps=true
+multichannel_signed_distance_field=false
+msdf_pixel_range=8
+msdf_size=48
+allow_system_fallback=true
+force_autohinter=false
+modulate_color_glyphs=false
+hinting=1
+subpixel_positioning=4
+keep_rounding_remainders=true
+oversampling=0.0
+Fallbacks=null
+fallbacks=[]
+Compress=null
+compress=true
+preload=[]
+language_support={}
+script_support={}
+opentype_features={}

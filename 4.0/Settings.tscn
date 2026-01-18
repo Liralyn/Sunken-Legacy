@@ -1,0 +1,86 @@
+[gd_scene load_steps=8 format=3 uid="uid://cty8k5ysnkquw"]
+
+[ext_resource type="Script" uid="uid://rirjibcjsrko" path="res://settings.gd" id="1_2fv1l"]
+[ext_resource type="Texture2D" uid="uid://ck42ktt473ejh" path="res://Tileset/exit/Untitled 01-16-2026 01-19-46(1).png" id="2_37a8j"]
+[ext_resource type="Texture2D" uid="uid://bekugr55o7rhk" path="res://Tileset/background/8f0be690-0dd9-4308-966e-8956dd4d4f0e.jpg" id="2_mx4kw"]
+[ext_resource type="FontFile" uid="uid://bhan50x8t2jrs" path="res://font/Pixel Game.otf" id="4_37a8j"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mx4kw"]
+atlas = ExtResource("2_37a8j")
+region = Rect2(207.42274, 159.182, 577.2711, 241.76035)
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_sfvul"]
+color = Color(1, 1, 1, 1)
+thickness = 8
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_blqn1"]
+color = Color(0, 0.21176471, 0.3019608, 1)
+thickness = 8
+
+[node name="Control" type="Control"]
+z_index = -3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -635.0
+offset_top = -187.0
+offset_right = 798.0
+offset_bottom = 611.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_2fv1l")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="EXIT" type="Button" parent="CanvasLayer"]
+offset_left = 1028.0
+offset_top = -4.0
+offset_right = 1156.0
+offset_bottom = 54.12132
+theme_override_colors/icon_pressed_color = Color(0.1584723, 0.15847233, 0.15847224, 1)
+theme_override_colors/icon_hover_color = Color(0.41568628, 0.41568628, 0.41568628, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0.41568628, 0.41568628, 0.41568628, 1)
+theme_override_constants/icon_max_width = 120
+icon = SubResource("AtlasTexture_mx4kw")
+flat = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(1205, 521)
+scale = Vector2(1.1797949, 1)
+texture = ExtResource("2_mx4kw")
+
+[node name="Camera2D" type="Camera2D" parent="Sprite2D"]
+zoom = Vector2(0.635, 0.635)
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 770.0
+offset_top = 83.0
+offset_right = 1641.0
+offset_bottom = 891.0
+
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 28.0
+offset_bottom = 66.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("4_37a8j")
+theme_override_font_sizes/font_size = 36
+text = "Options"
+horizontal_alignment = 1
+
+[node name="HSlider" type="HSlider" parent="Panel"]
+layout_mode = 0
+offset_left = 211.0
+offset_top = 190.0
+offset_right = 692.0
+offset_bottom = 303.0
+theme_override_styles/slider = SubResource("StyleBoxLine_sfvul")
+theme_override_styles/grabber_area = SubResource("StyleBoxLine_blqn1")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxLine_blqn1")
+value = 50.0
+
+[connection signal="pressed" from="CanvasLayer/EXIT" to="." method="_on_exit_pressed"]

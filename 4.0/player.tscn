@@ -1,9 +1,7 @@
-[gd_scene load_steps=40 format=3 uid="uid://cgmo4koeb1v0h"]
+[gd_scene load_steps=38 format=3 uid="uid://cgmo4koeb1v0h"]
 
 [ext_resource type="Texture2D" uid="uid://dcf6jbpugurwo" path="res://player/anya idle animation(4).png" id="1_4flbx"]
 [ext_resource type="Script" uid="uid://dcya4vs55a86g" path="res://player.gd" id="1_onrkg"]
-[ext_resource type="Texture2D" uid="uid://chc2fy6nva3v2" path="res://player/GraveRobber_jump.png" id="3_hqtel"]
-[ext_resource type="Texture2D" uid="uid://bptcq5bnp3kgk" path="res://player/GraveRobber_run.png" id="4_sweqy"]
 [ext_resource type="Texture2D" uid="uid://bpj32e11mpfp4" path="res://player/Idle2.png" id="5_2hs0m"]
 [ext_resource type="Texture2D" uid="uid://dqm21w2m4jgww" path="res://player/Swim.png" id="6_1jxqw"]
 
@@ -32,52 +30,52 @@ atlas = ExtResource("1_4flbx")
 region = Rect2(320, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_dw050"]
-atlas = ExtResource("3_hqtel")
-region = Rect2(0, 0, 48, 48)
+atlas = ExtResource("1_4flbx")
+region = Rect2(0, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_b26j0"]
-atlas = ExtResource("3_hqtel")
-region = Rect2(48, 0, 48, 48)
+atlas = ExtResource("1_4flbx")
+region = Rect2(64, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_n7ghd"]
-atlas = ExtResource("3_hqtel")
-region = Rect2(96, 0, 48, 48)
+atlas = ExtResource("1_4flbx")
+region = Rect2(128, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_nvl01"]
-atlas = ExtResource("3_hqtel")
-region = Rect2(144, 0, 48, 48)
+atlas = ExtResource("1_4flbx")
+region = Rect2(192, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ivps1"]
-atlas = ExtResource("3_hqtel")
-region = Rect2(192, 0, 48, 48)
+atlas = ExtResource("1_4flbx")
+region = Rect2(256, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_urp6f"]
-atlas = ExtResource("3_hqtel")
-region = Rect2(240, 0, 48, 48)
+atlas = ExtResource("1_4flbx")
+region = Rect2(320, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_bwjto"]
-atlas = ExtResource("4_sweqy")
-region = Rect2(0, 0, 48, 48)
+atlas = ExtResource("1_4flbx")
+region = Rect2(0, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_606se"]
-atlas = ExtResource("4_sweqy")
-region = Rect2(48, 0, 48, 48)
+atlas = ExtResource("1_4flbx")
+region = Rect2(64, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_u1c27"]
-atlas = ExtResource("4_sweqy")
-region = Rect2(96, 0, 48, 48)
+atlas = ExtResource("1_4flbx")
+region = Rect2(128, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_op7ga"]
-atlas = ExtResource("4_sweqy")
-region = Rect2(144, 0, 48, 48)
+atlas = ExtResource("1_4flbx")
+region = Rect2(192, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_q13i1"]
-atlas = ExtResource("4_sweqy")
-region = Rect2(192, 0, 48, 48)
+atlas = ExtResource("1_4flbx")
+region = Rect2(256, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_pylmc"]
-atlas = ExtResource("4_sweqy")
-region = Rect2(240, 0, 48, 48)
+atlas = ExtResource("1_4flbx")
+region = Rect2(320, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_pbfsw"]
 atlas = ExtResource("5_2hs0m")
@@ -259,14 +257,14 @@ radius = 25.0
 height = 106.0
 
 [node name="player" type="CharacterBody2D"]
+position = Vector2(0, -1)
 script = ExtResource("1_onrkg")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(3, 3)
 sprite_frames = SubResource("SpriteFrames_dw050")
-animation = &"Idle"
+animation = &"Run"
 autoplay = "Idle"
-frame_progress = 0.48102874
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(2, -4)

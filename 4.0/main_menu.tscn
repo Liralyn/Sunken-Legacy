@@ -1,7 +1,29 @@
-[gd_scene load_steps=3 format=3 uid="uid://vk2yjld81830"]
+[gd_scene load_steps=12 format=3 uid="uid://vk2yjld81830"]
 
 [ext_resource type="Texture2D" uid="uid://bekugr55o7rhk" path="res://Tileset/background/8f0be690-0dd9-4308-966e-8956dd4d4f0e.jpg" id="1_06t4h"]
 [ext_resource type="Script" uid="uid://dqmap2rmpx8uo" path="res://main_menu.gd" id="1_7vrkn"]
+[ext_resource type="Texture2D" uid="uid://r1xmkyek3i54" path="res://Tileset/new/Untitled 01-16-2026 01-19-46.png" id="3_dy7ct"]
+[ext_resource type="Texture2D" uid="uid://23ra64ki72cn" path="res://Tileset/load/Untitled 01-16-2026 01-19-46(1).png" id="6_j5v2v"]
+[ext_resource type="Texture2D" uid="uid://dws42p0fu7ogh" path="res://Tileset/settings/Untitled 01-16-2026 01-19-46(1).png" id="7_iotk1"]
+[ext_resource type="Texture2D" uid="uid://ck42ktt473ejh" path="res://Tileset/exit/Untitled 01-16-2026 01-19-46(1).png" id="8_w44g7"]
+[ext_resource type="FontFile" uid="uid://bhan50x8t2jrs" path="res://font/Pixel Game.otf" id="9_dy7ct"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cm266"]
+atlas = ExtResource("3_dy7ct")
+region = Rect2(205.416, 155.345, 577.573, 241.812)
+margin = Rect2(-1.945, 0, 0, 0)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8u0te"]
+atlas = ExtResource("6_j5v2v")
+region = Rect2(207.531, 155.224, 578.661, 248.165)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oiatc"]
+atlas = ExtResource("7_iotk1")
+region = Rect2(208.05827, 154.08292, 577.68774, 249.00882)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qe12f"]
+atlas = ExtResource("8_w44g7")
+region = Rect2(207.42274, 159.182, 577.2711, 241.76035)
 
 [node name="Main Menu" type="Control"]
 layout_mode = 3
@@ -22,36 +44,75 @@ zoom = Vector2(0.635, 0.635)
 
 [node name="START" type="Button" parent="."]
 layout_mode = 0
-offset_left = 404.0
-offset_top = 263.0
-offset_right = 788.0
-offset_bottom = 400.0
-text = "START"
+offset_left = 451.0
+offset_top = 325.0
+offset_right = 804.0
+offset_bottom = 477.0988
+theme_override_colors/font_outline_color = Color(0, 0, 0, 0)
+theme_override_colors/icon_pressed_color = Color(0.2520276, 0.25202766, 0.25202763, 1)
+theme_override_colors/icon_hover_color = Color(0.41598046, 0.41598043, 0.4159804, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0.41568628, 0.41568628, 0.41568628, 1)
+theme_override_constants/icon_max_width = 345
+theme_override_font_sizes/font_size = 1
+icon = SubResource("AtlasTexture_cm266")
+flat = true
+alignment = 0
 
 [node name="LOAD" type="Button" parent="."]
 layout_mode = 0
-offset_left = 402.0
-offset_top = 416.0
-offset_right = 782.0
-offset_bottom = 556.0
-text = "LOAD"
+offset_left = 451.0
+offset_top = 483.0
+offset_right = 804.0
+offset_bottom = 639.0277
+theme_override_colors/font_outline_color = Color(0, 0, 0, 0)
+theme_override_colors/icon_pressed_color = Color(0.2509804, 0.2509804, 0.2509804, 1)
+theme_override_colors/icon_hover_color = Color(0.41568628, 0.41568628, 0.41568628, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0.41568628, 0.41568628, 0.41568628, 1)
+theme_override_constants/icon_max_width = 345
+icon = SubResource("AtlasTexture_8u0te")
+flat = true
 
 [node name="SETTINGS" type="Button" parent="."]
 layout_mode = 0
-offset_left = 401.0
-offset_top = 581.0
-offset_right = 781.0
-offset_bottom = 711.0
-text = "SETTINGS"
+offset_left = 451.0
+offset_top = 641.0
+offset_right = 804.0
+offset_bottom = 797.88214
+theme_override_colors/icon_pressed_color = Color(0.1584723, 0.15847233, 0.15847224, 1)
+theme_override_colors/icon_hover_color = Color(0.41568628, 0.41568628, 0.41568628, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0.41568628, 0.41568628, 0.41568628, 1)
+theme_override_constants/icon_max_width = 345
+icon = SubResource("AtlasTexture_oiatc")
+flat = true
 
 [node name="EXIT" type="Button" parent="."]
 layout_mode = 0
-offset_left = 401.0
-offset_top = 725.0
-offset_right = 777.0
-offset_bottom = 869.0
-text = "EXIT"
+offset_left = 450.0
+offset_top = 799.0
+offset_right = 803.0
+offset_bottom = 955.88214
+theme_override_colors/icon_pressed_color = Color(0.1584723, 0.15847233, 0.15847224, 1)
+theme_override_colors/icon_hover_color = Color(0.41568628, 0.41568628, 0.41568628, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0.41568628, 0.41568628, 0.41568628, 1)
+theme_override_constants/icon_max_width = 345
+icon = SubResource("AtlasTexture_qe12f")
+flat = true
 
+[node name="TITLE" type="Label" parent="."]
+layout_mode = 0
+offset_left = -104.0
+offset_top = 68.0
+offset_right = 1393.0
+offset_bottom = 347.0
+theme_override_colors/font_color = Color(1, 0.7647059, 0.043137256, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/line_spacing = -52
+theme_override_constants/outline_size = 40
+theme_override_fonts/font = ExtResource("9_dy7ct")
+theme_override_font_sizes/font_size = 276
+text = "SUNKEN Legacy"
+
+[connection signal="button_down" from="START" to="." method="_on_start_button_down"]
 [connection signal="pressed" from="START" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="LOAD" to="." method="_on_load_pressed"]
 [connection signal="pressed" from="SETTINGS" to="." method="_on_settings_pressed"]

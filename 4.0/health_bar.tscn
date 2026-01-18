@@ -6,6 +6,7 @@
 
 [node name="health bar" type="Node2D"]
 position = Vector2(10, 10)
+rotation = 0.00018914726
 script = ExtResource("1_kdjhy")
 Heart1 = ExtResource("1_m7ell")
 Heart0 = ExtResource("3_srckl")

@@ -1,0 +1,64 @@
+[gd_scene load_steps=5 format=3 uid="uid://dy1k48eaow2n5"]
+
+[ext_resource type="Script" uid="uid://djsl72pbel0md" path="res://Confirmation.gd" id="1_cux40"]
+[ext_resource type="Texture2D" uid="uid://cfbdkhgslralf" path="res://Tileset/exit/textbox.png" id="2_mkshq"]
+[ext_resource type="Texture2D" uid="uid://bekugr55o7rhk" path="res://Tileset/background/8f0be690-0dd9-4308-966e-8956dd4d4f0e.jpg" id="3_mkshq"]
+[ext_resource type="FontFile" uid="uid://bhan50x8t2jrs" path="res://font/Pixel Game.otf" id="3_ov2qu"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_cux40")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(547, 335.00003)
+scale = Vector2(17.125, 13.46875)
+texture = ExtResource("2_mkshq")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 353.0
+offset_top = 258.0
+offset_right = 741.0
+offset_bottom = 336.0
+theme_override_fonts/font = ExtResource("3_ov2qu")
+theme_override_font_sizes/font_size = 76
+text = "Are you sure?"
+
+[node name="YES" type="Button" parent="."]
+layout_mode = 0
+offset_left = 393.0
+offset_top = 345.0
+offset_right = 478.0
+offset_bottom = 400.0
+theme_override_fonts/font = ExtResource("3_ov2qu")
+theme_override_font_sizes/font_size = 45
+text = "YES"
+
+[node name="NO" type="Button" parent="YES"]
+layout_mode = 0
+offset_left = 226.25
+offset_top = 2.5
+offset_right = 311.25
+offset_bottom = 57.5
+theme_override_fonts/font = ExtResource("3_ov2qu")
+theme_override_font_sizes/font_size = 45
+text = "NO"
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+z_index = -130
+position = Vector2(554, 331)
+scale = Vector2(1.1797949, 1)
+texture = ExtResource("3_mkshq")
+
+[node name="Camera2D" type="Camera2D" parent="Sprite2D2"]
+zoom = Vector2(0.635, 0.635)
+
+[connection signal="pressed" from="YES" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="YES" to="." method="_on_yes_pressed"]
+[connection signal="pressed" from="YES/NO" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="YES/NO" to="." method="_on_no_pressed"]
